@@ -18,5 +18,16 @@ function registerUser(username, password, email) {
     // You can add further logic here such as sending the data to a server or localStorage
 }
 
+function register() {
+    // Get values from the registration form
+    let username = document.getElementById('username').value;
+    let password = document.getElementById('password').value;
+    let email = document.getElementById('email').value;
+
+    // Call registerUser() with the form values
+    registerUser(username, password, email);
+}
+
+
 // Sample usage:
 // registerUser('john_doe', 'password123', 'john@example.com');
